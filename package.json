@@ -1,0 +1,38 @@
+{
+  "name": "mobx-react-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikoooo/mobx-react-webpack-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikoooo/mobx-react-webpack-boilerplate/issues"
+  },
+  "homepage": "https://github.com/nikoooo/mobx-react-webpack-boilerplate#readme",
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "node-sass": "^4.9.1",
+    "sass-loader": "^7.0.3",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.21.0",
+    "typescript": "^2.9.2",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8"
+  },
+  "dependencies": {
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
+}
