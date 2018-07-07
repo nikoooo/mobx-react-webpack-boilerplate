@@ -1,9 +1,11 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-
-import { HelloStateless } from "./components/Hello";
+import { HelloStatefull, HelloStateless } from "./components/Hello";
 
 ReactDOM.render(
-    <HelloStateless compiler="TypeScript" framework="React" />,
-    document.getElementById("example")
+    <React.Fragment>
+        <HelloStateless exampleProp1="imAProp" exampleProp2="imAlsoProp" />
+        <HelloStatefull exampleProp1="imAProp" exampleProp2="imAlsoProp" />
+    </React.Fragment>,
+    document.getElementById("app-root"),
 );

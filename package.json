@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "webpack-dev-server",
-    "start": "webpack --mode development ",
+    "server-watch": "webpack-dev-server --hot",
+    "webpack-watch": "webpack --watch --mode development",
+    "start": "npm run webpack-watch & npm run server-watch",
     "build": "webpack --mode production"
   },
   "repository": {
@@ -36,6 +37,8 @@
   "dependencies": {
     "@types/react": "^16.4.6",
     "@types/react-dom": "^16.0.6",
+    "mobx": "^5.0.3",
+    "mobx-react": "^5.2.3",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   }
