@@ -25,6 +25,8 @@
     "sass-loader": "^7.0.3",
     "source-map-loader": "^0.2.3",
     "style-loader": "^0.21.0",
+    "tslint": "^5.10.0",
+    "tslint-config-airbnb": "^5.9.2",
     "typescript": "^2.9.2",
     "webpack": "^4.15.1",
     "webpack-cli": "^3.0.8"
