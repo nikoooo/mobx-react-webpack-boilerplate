@@ -1,8 +1,15 @@
+const webpack = require('webpack');
+const path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+
 module.exports = {
-    entry: "./src/app.tsx",
+    entry: [
+        "./src/app.tsx"
+    ],
     output: {
         filename: "bundle.js",
-        path: __dirname + "/dist"
+        path: path.resolve(__dirname, "dist"),
+        publicPath: "dist/"
     },
 
     mode: "development",
@@ -32,6 +39,12 @@ module.exports = {
             }
         ]
     },
+
+
+    plugins: [
+        new CleanWebpackPlugin(['dist']),
+        new webpack.HotModuleReplacementPlugin()
+    ],
 
     // When importing a module whose path matches one of the following, just
     // assume a corresponding global variable exists and use that instead.

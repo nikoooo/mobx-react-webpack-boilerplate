@@ -1,12 +1,11 @@
 {
   "name": "mobx-react-webpack-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "boilerplate",
   "main": "index.js",
   "scripts": {
-    "server-watch": "webpack-dev-server --hot",
+    "server-watch": "webpack-dev-server --inline --hot --config ./webpack.config.js",
     "webpack-watch": "webpack --watch --mode development",
-    "start": "npm run webpack-watch & npm run server-watch",
     "build": "webpack --mode production"
   },
   "repository": {
@@ -21,7 +20,9 @@
   },
   "homepage": "https://github.com/nikoooo/mobx-react-webpack-boilerplate#readme",
   "devDependencies": {
+    "@types/webpack-env": "^1.13.6",
     "awesome-typescript-loader": "^5.2.0",
+    "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
     "node-sass": "^4.9.1",
     "sass-loader": "^7.0.3",
@@ -32,7 +33,8 @@
     "typescript": "^2.9.2",
     "webpack": "^4.15.1",
     "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.4",
+    "webpack-env": "^0.8.0"
   },
   "dependencies": {
     "@types/react": "^16.4.6",

@@ -9,7 +9,7 @@ export interface IHelloProps { exampleProp1: string; exampleProp2: string; }
 export const HelloStateless = (props: IHelloProps) => (
     <React.Fragment>
         <h1>
-            This is a stateless component. A simpel component without special logic.
+            This a is a stateless component. A simpel component without special logic.
         </h1>
         <p>
             Here is a property: {props.exampleProp1} and another: {props.exampleProp2}!
@@ -29,7 +29,6 @@ export class HelloStatefull extends React.Component<IHelloProps, {}> {
     * There are more functions in reacts life cycle.
     */
     public componentDidMount() {
-        console.log("Component DID mount");
         const interval = setInterval(
             action(() => {
                 this.tick--;
